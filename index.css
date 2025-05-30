@@ -27,7 +27,7 @@ p {
     margin-bottom: 32px;
     color: #a81d4d;
 }
-.btn-group {
+.buttons{
     display: flex;
     flex-direction: column;
     gap: 16px;
