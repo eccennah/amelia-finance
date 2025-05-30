@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Income Tracker</title>
+    <link rel="stylesheet" href="income.css">
+</head>
+<body>
+    <h1>Income Tracker</h1>
+    <form id="incomeForm">
+        <label>
+            Amount:
+            <input type="number"  name="amount" required>
+        </label>
+        <label>
+            Date:
+            <input type="date" name="date" required>
+        </label>
+        <label>
+            Category:
+            <input type="text" name="category" required>
+        </label>
+        <label>
+            Notes:
+            <input type="text" name="notes">
+        </label>
+        <button type="submit">Add Income</button>
+    </form>
+
+    <table id="incomeTable">
+        <thead>
+            <tr>
+                <th>Amount</th>
+                <th>Date</th>
+                <th>Category</th>
+                <th>Notes</th>
+            </tr>
+        </thead>
+        <tbody> </tbody>
+    </table>
+
+    <script src="income.js"></script>
+</body>
+</html>
