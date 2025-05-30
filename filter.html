@@ -6,8 +6,40 @@
     <title>Filter Entries</title>
     <link rel="stylesheet" href="filter.css">
    
+    <title>Filter Entries</title>
+    <link rel="stylesheet" href="filter.css">
+   
 </head>
 <body>
+    <div class="container">
+        <h1>View & Filter Entries</h1>
+        <div class="filters">
+            <label>
+                Type:
+                <select id="typeFilter">
+                    <option value="all">All</option>
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+            </label>
+            <label>
+                Date:
+                <input type="date" id="dateFilter">
+            </label>
+            <label>
+                Min Amount:
+                <input type="number" id="minAmountFilter" min="0" step="0.01">
+            </label>
+            <label>
+                Max Amount:
+                <input type="number" id="maxAmountFilter" min="0" step="0.01">
+            </label>
+            <button onclick="applyFilters()">Filter</button>
+            <button onclick="resetFilters()" style="background:#ffd6e6;color:#d72660;">Reset</button>
+        </div>
+       
+    </div>
+    <script src= "filter.js"> </script>
     <div class="container">
         <h1>View & Filter Entries</h1>
         <div class="filters">
